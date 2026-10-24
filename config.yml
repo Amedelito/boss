@@ -1,0 +1,32 @@
+# Namespace del resource pack. Pon el MISMO que usa tu plugin anterior
+# para que ambos compartan el pack (carpeta assets/<namespace>/).
+pack-namespace: casino
+
+# Si el modelo del jefe se ve mirando hacia atras, cambia 0 por 180.
+model-yaw-offset: 0
+
+boss:
+  name: "<gradient:#7b2ff7:#f107a3>Titán del Vacío</gradient>"
+  health: 1500
+  scale: 2.5          # tamaño del jefe (hitbox + modelo)
+  damage: 12          # daño melee
+  speed: 0.27
+  xp: 3000
+  bar-range: 70       # distancia a la que ven la barra de vida
+
+drops:
+  propulsor-chance: 100   # % de soltar el Propulsor del Vacío
+  coins-min: 40
+  coins-max: 90
+  # ID del modelo de la moneda dentro del pack. Si tu plugin de tragaperras
+  # ya tiene moneda, pon aqui su ID (ej: slot_coin) y se vera igual.
+  coin-model: slot_coin
+  # Si tu plugin de tragaperras detecta la moneda por un tag PDC, pon aqui
+  # "namespace:clave" y valor (string) para que sean compatibles. Vacío = ninguno.
+  coin-pdc-key: ""
+  coin-pdc-value: ""
+
+propulsor:
+  cooldown-ticks: 25
+  dash-power: 2.2
+  jump-power: 1.5

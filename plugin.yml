@@ -1,0 +1,13 @@
+name: VoidTitan
+version: 1.0.0
+main: dev.titan.VoidTitanPlugin
+api-version: '1.21'
+description: Jefe Titan del Vacio con huevo, fases, ataques, barra de vida y drops custom
+commands:
+  titan:
+    description: Comandos del Titan del Vacio
+    usage: /titan <give|spawn|kill|reload>
+    permission: titan.admin
+permissions:
+  titan.admin:
+    default: op
